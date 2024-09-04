@@ -20,5 +20,6 @@ By default, the built image will be named godzilla-image and container will run 
 <br>
 ```--dir```: Your source directory <br>
 ```--name```: Your image name (Choose the name base on what you want) <br>
-```--port```: Choose which port you want for your Docker container <br>
+```--containerport```: Your container port<br>
+```--hostport```: Choose which port you want for your Docker container <br>
 ```--option```: Choose option BUILD | RUN. BUILD will only build docker image, no more. RUN will BUILD docker image then RUN the container.
