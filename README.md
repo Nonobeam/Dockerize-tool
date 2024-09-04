@@ -10,15 +10,19 @@ This version is light weight, nothing more to config, ease to use. <br>
 First of all, this is just a built tool using sh so that basically it is not doing any magic stuff. You still need to build your source code, running docker in your machine, login your docker im terminal, and any other required setup.
 
 ### For first time, just use this ###
-``./dockerize.sh --dir=${DIRECTORY_SOURCE}`` <br>
+```
+./dockerize.sh --dir=${DIRECTORY_SOURCE}
+```
+
 By default, the built image will be named godzilla-image and container will run on port 8080. <br>
-```${DIRECTORY_SOURCE}```: Where you store your jar file
+``${DIRECTORY_SOURCE}``: Where you store your jar file
 
 ### For more custom, use this one ###
 
-``./dockerize.sh --dir=${DIRECTORY_SOURCE} --name=${IMAGE_NAME} --port=${PORT} --option=${BUILD|RUN}`` <br>
-<br>
-```--dir```: Your source directory <br>
+```
+./dockerize.sh --dir=${DIRECTORY_SOURCE} --name=${IMAGE_NAME} --port=${PORT} --option=${BUILD|RUN}
+```
+``--dir``: Your source directory <br>
 ```--name```: Your image name (Choose the name base on what you want) <br>
 ```--containerport```: Your container port<br>
 ```--hostport```: Choose which port you want for your Docker container <br>
